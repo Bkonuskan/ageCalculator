@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <div class="birthday">
+          <div class="title">
+            <h1>Age Calculator</h1>
+            <p>Berechne dein Alter</p>
+          </div>
+          <div class="date_wrapper">
+            <div class="block_day">
+              <label for="day">Tag</label>
+              <input
+                type="text"
+                name="day"
+                id="day"
+                placeholder="TT"
+                required
+                minlength="1"
+                maxlength="2"
+              />
+            </div>
+            <div class="block_month">
+              <label for="month">Monat</label>
+              <input
+                type="text"
+                name="month"
+                id="month"
+                placeholder="MM"
+                required
+                minlength="1"
+                maxlength="2"
+              />
+            </div>
+            <div class="block_year">
+              <label for="year">Jahr</label>
+              <input
+                type="text"
+                name="year"
+                id="year"
+                placeholder="JJJJ"
+                required
+                minlength="4"
+                maxlength="4"
+              />
+            </div>
+          </div>
+          <div class="enter">
+              <button type="button" onclick="calculateAge()">Submit</button>
+          </div>
+          <div id="ergebnis">Dein Ganz Alt</div>
+        </div>
+      </form>
+    </div>
+
+    <script src="s.js"></script>
+  </body>
+</html>
